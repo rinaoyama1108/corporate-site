@@ -36,6 +36,8 @@ header .sp_navi_li li {
   margin: 0;
   padding: 0;
 }
+
+
 header .sp_navi_li li a {
   display: block;
   padding: 10px 8px;
@@ -110,17 +112,7 @@ header .sp_navi_li li a {
     background-size: 40px 40px;
   }
 }
-@media screen and (min-width: 550px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 550px) and (min-resolution: 2dppx) {
-  header .pc_navi_li li.navi_company a {
-    background-image: url("../images/top/navi_company@2x.png");
-  }
-}
 
-@media (max-width: 550px) {
-  header .pc_navi {
-    display: none;
-  }
-}
 
 #cover_area {
   text-align: center;
@@ -232,7 +224,7 @@ header .sp_navi_li li a {
 footer {
   background-color: #42b9d0;
   color: #fff;
-  padding-top: 20px;
+  padding-top: 100px;
 }
 @media (max-width: 550px) {
   footer .container {
@@ -326,12 +318,23 @@ h1 {
 
 /*news */
 
-@media (min-width: 550px){
+
 #sub_cover h2 {
     text-align: center;
     color: white;
     font-size: 32px;
     font-size: 3.2rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.2rem;
+}
+}
+@media screen and (max-width: 769px){
+#sub_cover h2 {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
     margin: 0;
     letter-spacing: 0.2rem;
@@ -362,7 +365,6 @@ h1 {
 #contents #main .news_li{
   font-size:15px;
   font-weight:400;
-  height:25px;
   line-height:24px;
   list-style-image:none;
   list-style-position:outside;
@@ -419,6 +421,27 @@ h1 {
  margin-bottom: 50px;
 }
 
+#contents #sidebar .pc_sidemenu li {
+    list-style: none;
+    display: block;
+    border-bottom: 1px solid #e5e5e5;
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    margin-bottom: 0px;
+    padding: 10px 10px 10px 20px;
+    background-image: url(../images/news/side_arrow.png);
+    background-size: 4px 8px;
+}
+
+
+
+@media (max-width: 768px){
+#sub_cover {
+    
+}
+}
+
+
 #contents #main td {
     padding: 20px 0;
     color: #626262;
@@ -431,5 +454,9 @@ h1 {
     padding: 20px 0;
     color: #626262;
     text-align: left;
-    
+}
+
+@media screen and (max-width: 769px){
+    .pc_navi{display: none;} 
+    .pc_sidemenu{display: none;}
 }
